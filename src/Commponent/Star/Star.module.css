@@ -1,0 +1,26 @@
+.long-line {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 20px;
+}
+
+
+.long-line::after,
+.long-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 4px;
+  background-color: var(--line-color, black);
+  transform: translateY(-50%);
+}
+
+.long-line::before {
+  left: -110px;
+}
+
+.long-line::after {
+  right: -110px;
+}
