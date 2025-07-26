@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
    
-   <div    className="vh-100  mt-7  text-center">
+   <div    className="vh-100  mt-8  text-center">
     <div  className="w-25   ">
       <img src={nf}   className="w-100  ms-7  "      alt="" />
     </div>
